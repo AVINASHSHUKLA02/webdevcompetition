@@ -1,0 +1,476 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+background-color: #c4a48b;
+}
+#main{
+    position: relative;
+
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: rgb(177, 194, 208); */
+
+
+}
+.navbar img{position: fixed;
+margin-left: -1200px;
+    /* width: 22vw; */
+    height: 40px;
+    margin: -22px,-20px;
+    padding: -202px -51px;
+
+}
+#page1{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-color: #c4a48b;
+}
+.navbar{
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-delay: 1;
+    position:fixed ;
+    display: flex;
+    color: #fff;
+    z-index: 9999;
+    gap: 25px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    /* background-color: #c4a48b; */
+    height: 100px;
+}
+
+.navbar h3{
+font-style: oblique;
+font-weight: 500;
+position: relative;
+left: 220px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar span h1{
+    border: 4px solid rgba(255, 255, 255, 0.495);
+    background-color: #ffffff97;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-style: oblique; */
+    font-weight: 400;
+    position: relative;
+    margin-left: 400px;
+    
+}
+.navbar h2{
+    position: relative;
+    left: 280px;
+}
+#page1 >p{
+    color: black;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 99;
+    background-color: #c4a48b;
+
+}
+#content{
+    top: 30%;
+    color: #fff;
+    padding-left: 50px;
+    width: 30%;
+    height: 500px;
+    animation-name: content;
+    animation-duration: 3S;
+    animation-delay:0.2;
+    position: absolute;
+    /* background-color: #f3ede8; */
+}
+#content h2{
+    font-size: 18px;
+}
+#content h1{
+    font-size: 50px;
+    margin-top: 30px;
+}
+#content p{margin-top: 30px;
+    font-weight: 800;
+    text-align: center;
+    font-size: 20px;
+
+    text-decoration: overline;
+}
+#content button{
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
+    border:  solid #fff;
+}
+#page1 #web1 {
+    top: 250px;
+    color: #fff;
+    left: 50%;
+    padding-left: 50px;
+    width: 40%;
+    overflow: hidden;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: absolute;
+    background-color: #f3ede8;
+}
+#page1 #web1 img{
+    width: 110%;
+    position: relative;
+    height: 200%;
+left: -10%;
+    animation-name: scroll;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    /* background-position: center; */
+    /* background-size: cover; */
+}
+@keyframes nav {
+    from{
+        top: -100px;
+
+    }
+    to{
+        top: 0%;
+    }
+    
+}
+@keyframes content {
+    from{
+        top: 10px; 
+        opacity: 0;
+
+    }
+    to{
+top: 30%;
+
+    }
+    
+    
+    
+}
+@keyframes scroll {
+    0%{
+top: 0%;
+
+    }
+    50%{
+top: -100%;
+    }
+    100%{
+        top: 0%;
+    }
+    
+}
+
+#page2{
+    width: 100vw;
+    position: relative;
+    color:black;
+    display: flex;
+    top: 95px;
+
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    background-color: #e9d9ce;
+}
+#page2 h1{
+    position: relative;
+    top: 20%;
+    font-size: 40px;
+    left: 0%;
+    box-shadow: #e9d9ce 100px 200px;
+    text-shadow: #f3ede8 1px 10px;
+    
+
+}
+
+#page2 h2{
+    position: relative;
+    top: 30%;
+    font-size: 22px;
+    box-shadow: #e9d9ce 10px 20px;
+    text-shadow: #f2f0ee 5px 10px;
+    /* scale: 2; */
+
+}
+#page2 h3{
+    position: relative;
+    top: 25%;
+    width: 50%;box-shadow: #e9d9ce 10px 20px;
+    text-shadow: #f3ede8 5px 10px;
+    
+    text-align: center;
+    /* scale: 2; */
+}
+
+#ro{
+    /* scale: 2; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page2 h4::-webkit-scrollbar{
+
+    display: none;
+}
+#page2 h4{  position: relative;
+    top: 100%;
+    font-family: Lobster;
+    
+    white-space: nowrap;
+   overflow-x: auto;
+   overflow-y: hidden;
+    width: 300%;
+  background-color: c4a48b#ca9;
+    font-size: 80px;
+    box-shadow: #534c48 10px  10px 100px;
+    text-shadow: #f3ede8 15px 10px;
+    color: #37302b;
+    animation-name: h4;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+  
+    /* animation-delay: 1s; */
+    text-align: center;
+
+}
+@keyframes h4 {
+    0%{
+        color: #bdb3ae;
+        box-shadow: #534c48 10px  10px 100px;
+left: 100%;
+    }
+    100%{
+        box-shadow: #534c48 10px  10px 100px;
+    left: -100%;
+        color: #37302b;
+    }
+    
+}
+
+
+#page3{
+    width: 100vw;
+    position: relative;
+    color:black;
+    display: flex;
+    top: 95px;
+
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    background-color: #e9d9ce;
+}
+
+#page3 img{
+    width: 85%;
+    height: 80%;
+position: relative;
+
+
+}
+#page3 video{
+    width: 75%;
+    top: 5%;
+    position: absolute;
+    
+    height: 70%;
+}
+#page4{
+    width: 100vw;
+    position: relative;
+    color:black;
+    display: flex;
+    top: 205px;
+    gap: 400px;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e9d9ce;
+}
+#page4 h2{
+    left: 80px;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    top: -10%;
+}
+#page4 h4{
+    left: 120px;
+    position: relative;
+    text-align: left;
+    width: 550px;
+    top: -20%;
+   /* background-color:  rgba(105, 90, 205, 0.133); */
+}
+#page4 img{
+    width: 40vw;
+    height: 40vh;
+    z-index: 9999;
+
+    top: -5%;
+    left: 780px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+.a1{
+    width: 50%;
+    height: 50%;
+    top: 40%;
+    background-color: #37302b;
+    position:absolute;
+    background-image: url(https://media-www.sqspcdn.com/images/pages/tour/overview-websites/blog-features-block/blog_ui-2-750w.png);
+    
+    background-position: center;
+    background-size: cover;
+}
+.a2{
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    
+    top: 40%;
+    background-color: #fff;
+    position:absolute;
+}
+.a2  a{
+    position: relative;
+    top: 90%;
+    color: black;
+    left: 10%;
+
+
+}
+.page5{
+    width: 100vw;
+    position: relative;
+    color:black;
+    top: 20px;
+
+    height: 100vh;
+}
+.page5 img{
+    width: 50vw;
+    height: 50vh;
+    top: 300px;
+position: relative;
+}
+.page5 a{
+    position: absolute;
+    left: 90%;
+    top: 70%;
+    font-size: 20px;
+    text-decoration: none;
+font-family: lobster;
+color: #37302b;
+}
+@media (max-width:800px)  {
+    .navbar{
+    width: 138%;
+    height: 82px;
+    gap: 8px;
+    font-size: 10px;
+    }
+    .navbar img{
+margin-left: -450px;
+height: 15px;
+    }
+    .navbar h2{
+        left: 230px;
+    }
+    #content{
+        top: 15%;
+    color: rgb(255, 255, 255);
+    padding-left: 58px;
+    width: 30%;
+    height: 466px;
+    width: 338px;
+    }
+    @keyframes content {
+        from{
+            top: 10px; 
+            opacity: 0;
+    
+        }
+        to{
+    top: 15%;
+    
+        }
+        
+}
+#page1 #web1{
+    top: 650px;
+color: rgb(255, 255, 255);
+left: 56%;
+padding-left: 50px;
+width: 36%;
+overflow: hidden;
+background-image: url(style2.css);
+background-position: center center;
+background-size: cover;
+height: 222px;
+}
+#page4 h2{
+    left: -70px;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    top: -10%;
+    font-size: 10px;
+}
+#page4 h4 {
+    left: 8px;
+    position: relative;
+    text-align: left;
+    width: 488px;
+    top: -27%;
+    font-size: 10px;
+}
+.a1 {
+    left: 28px;
+    width: 41%;
+    height: 37%;
+    top: 40%;
+    background-color: #37302b;
+    position: absolute;
+    background-image: url(https://media-www.sqspcdn.com/images/pages/tour/overview-websites/blog-features-block/blog_ui-2-750w.png);
+    background-position: center;
+    background-size: cover;
+}
+.a2{
+    width: 43%;
+    height: 37%;
+    left: 52%;
+}
+.a2 a{
+    top: 81%;
+}
+.page5 img {
+    width: 45vw;
+    height: 27vh;
+    top: 271px;
+    position: relative;
+}
+.page5 a{
+    left: 70%;
+}
+}
